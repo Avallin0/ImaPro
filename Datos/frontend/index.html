@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ImaPro | Panel de diagnóstico</title>
+  <link rel="stylesheet" href="stilo.css">
+</head>
+<body>
+
+  <section class="dashboard-hero">
+    <div>
+      <p class="eyebrow">Canal sincronizado</p>
+      <h1>Panel de diagnóstico de miniaturas</h1>
+      <p>
+        ImaPro analiza tu canal, detecta oportunidades y te ayuda a decidir
+        qué miniaturas revisar, por qué y con qué prioridad.
+      </p>
+    </div>
+
+    <div class="channel-status">
+      <span>Datos básicos importados</span>
+      <strong id="videosAnalizados">0 vídeos</strong>
+    </div>
+  </section>
+
+  <section class="module-grid">
+    <a class="module-card" href="analisis-canal.html">
+      <span class="module-tag">Canal</span>
+      <h2>Análisis personalizado del canal</h2>
+      <p>
+        Compara tu histórico interno y detecta patrones propios de CTR,
+        impresiones, retención y watch time.
+      </p>
+    </a>
+
+    <a class="module-card" href="top-miniaturas.html">
+      <span class="module-tag">Ganadoras</span>
+      <h2>Top 3 miniaturas ganadoras</h2>
+      <p>
+        Identifica tus miniaturas más fuertes combinando CTR alto,
+        buena retención e impresiones suficientes.
+      </p>
+    </a>
+
+    <a class="module-card module-card-highlight" href="pendientes.html">
+      <span class="module-tag">Prioridad</span>
+      <h2>Vídeos pendientes de revisar</h2>
+      <p>
+        Detecta vídeos con potencial desaprovechado y decide si merece cambiar
+        miniatura, título o revisar la promesa del vídeo.
+      </p>
+    </a>
+
+    <a class="module-card" href="shorts.html">
+      <span class="module-tag">Shorts</span>
+      <h2>Shorts Lab</h2>
+      <p>
+        Analiza Shorts con métricas distintas: viewed vs swiped away,
+        retención inicial, repetición y shares.
+      </p>
+    </a>
+
+    <a class="module-card" href="prepublicacion.html">
+      <span class="module-tag">Antes de publicar</span>
+      <h2>Revisión pre-publicación</h2>
+      <p>
+        Evalúa una miniatura antes de publicarla comparándola con los patrones
+        que ya funcionan en tu canal.
+      </p>
+    </a>
+  </section>
+
+  <section class="recent-videos-section">
+    <div class="section-heading">
+      <h2>Vídeos recientes</h2>
+      <p>Vista rápida de los vídeos importados del canal.</p>
+    </div>
+
+    <div id="videosContainer" class="videos-grid"></div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>

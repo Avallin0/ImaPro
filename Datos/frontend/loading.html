@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Analizando miniatura | ImaPro</title>
+  <link rel="stylesheet" href="stilo.css" />
+</head>
+
+<body class="imap-body">
+
+  <header class="imap-topbar">
+    <div class="imap-brand">
+      <div class="imap-logo">I</div>
+      <span>ImaPro</span>
+    </div>
+
+    <nav class="imap-nav">
+      <a href="landing.html">Inicio</a>
+      <a href="index.html">Dashboard</a>
+    </nav>
+  </header>
+
+  <main class="loading-page">
+
+    <section class="loading-card">
+
+      <div class="loading-icon-wrapper">
+        <div class="loading-spinner"></div>
+      </div>
+
+      <p class="loading-label">Análisis en curso</p>
+
+      <h1>Estamos analizando tu miniatura</h1>
+
+      <p class="loading-description">
+        ImaPro está revisando la composición visual, el texto, el contraste,
+        la claridad del mensaje y el potencial de rendimiento de esta miniatura.
+      </p>
+
+      <div class="analysis-steps">
+        <div class="analysis-step active">
+          <span class="step-dot"></span>
+          <div>
+            <strong>Detectando elementos visuales</strong>
+            <p>Colores, caras, texto y estructura general.</p>
+          </div>
+        </div>
+
+        <div class="analysis-step active">
+          <span class="step-dot"></span>
+          <div>
+            <strong>Calculando claridad de la miniatura</strong>
+            <p>Comprobando si el mensaje se entiende rápido.</p>
+          </div>
+        </div>
+
+        <div class="analysis-step">
+          <span class="step-dot"></span>
+          <div>
+            <strong>Preparando recomendación ImaPro</strong>
+            <p>Generando una mejora visual accionable.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="loading-progress">
+        <div class="loading-progress-bar"></div>
+      </div>
+
+      <div class="loading-actions">
+        <a id="go-detail-btn" class="primary-btn" href="detalle.html">
+          Ver análisis
+        </a>
+
+        <a class="secondary-btn" href="index.html">
+          Volver al dashboard
+        </a>
+      </div>
+
+      <p class="loading-note">
+        De momento este análisis es visual/simulado. Mañana se podrá conectar con
+        CTR, impresiones y retención desde YouTube Analytics API.
+      </p>
+
+    </section>
+
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
